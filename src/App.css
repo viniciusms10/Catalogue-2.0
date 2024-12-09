@@ -1,38 +1,382 @@
-.App {
-  text-align: center;
+.lexend-zetta-fonte {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: Thin;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    background: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+    background: none;
 }
 
-.App-link {
-  color: #61dafb;
+header{
+    padding: 15px;
+    margin: auto;
+    font-size: larger;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 50px 25px;
+    background-image: url();
+    background-size: cover;
+    position: sticky;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.left{
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.left,.right,label{
+    background: none;
+}
+
+.slide-show{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400px;
+    height: 400;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+
+
+.search-container{
+    margin: auto;
+    width: 50vw;
+    height: 4vh;
+    padding: 2rem;
+    border: none;
+}
+
+.search{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: larger;
+    border: none;
+    text-decoration: underline;
+    border-radius: 15px;
+}
+
+.title{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+
+.title h1{
+    padding-bottom: 10px;
+}
+
+.title label{
+    padding: 15px;
+    transition: 0.4s;
+}
+
+.title label:hover{
+    color: chartreuse;
+    font-size: large;
+}
+
+.title img{
+    width: 150px;
+    background: none;
+}
+
+.options{
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 2rem;
+    width: 90vw;
+    background: none;
+    gap: 10px;
+}
+
+.Living-room:hover,.Kitchen:hover,.Bathroom:hover,.Bedroom:hover,.Dining-room:hover,.Laundry:hover{
+    transform: rotateY(180deg);
+}
+
+.Living-room,.Kitchen,.Bathroom,.Bedroom,.Dining-room,.Laundry{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transform-style:preserve-3d;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.back,.front{
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.front{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
+}
+
+.Living-room .back{
+    background-image: url(images/sala-de-estar.webp);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.Kitchen .back{
+    background-image: url(images/cozinha.avif);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.Bathroom .back{
+    background-image: url(images/banheiro.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.Bedroom .back{
+    background-image: url(images/quarto.jpeg);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.Dining-room .back{
+    background-image: url(images/sala-de-jantar.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.Laundry .back{
+    background-image: url(images/lavanderia.jpeg);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+section{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+.catalogue{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: none;
+    z-index: -1;
+}
+
+.show-item{
+    padding: 1.5%;
+    border-radius: 20px;
+    z-index: 1;
+    background: none;
+    transition: 1s;
+    text-align: center;
+    margin: auto;
+    width: 20vw;
+    word-wrap: break-word;
+    height: 40vh;
+}
+
+.show-item:hover{
+    padding-bottom: 30px;
+    background: rgb(2,0,36);
+background: linear-gradient(42deg, rgb(79, 74, 173) 0%, rgb(137, 152, 146) 0%, rgb(127, 144, 136) 21%, rgb(109, 133, 123) 45%, rgb(130, 151, 136) 100%);
+   
+
+        p{
+        color: black;
+        visibility: visible;
+        transition: 0.5s;
+    }
+}
+
+.show-item label{
+    font-size: 20px;
+}
+
+.product-name{
+    padding-top: 7.5rem;
+}
+
+.show-item p{
+    visibility: hidden;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+    margin-bottom: -5%;
+    cursor: pointer;
+}
+
+.show-item p:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.show-item img{
+    margin: auto;
+    text-align: center;
+    display: grid;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 20px;
+}
+
+
+footer{
+    background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
+    border-radius: 10px 10px 0px 0px;
+    z-index: 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.footer-left{
+    text-align: center;
+    background: none;
+    padding: 15px;
+}
+
+footer figure, footer h2{
+    background-color: transparent;
+    padding: 10px;
+}
+
+footer figure img{
+    width: 2vw;
+    padding: 10px;
+    transition: 0.5s;
+    background: none;
+}
+
+footer figure img:hover{
+    width: 3vw;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer-logo{
+    background: none;
+    width: 10vw;
+}
+
+.footer-right{
+    width: fit-content;
+    text-align: center;
+    background: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* duas colunas com largura igual */
+    grid-gap: 10px; /* espaço entre as colunas */
+}
+
+.footer-right figure{
+    text-align: center;
+}
+
+figcaption{
+    background: none;
+}
+
+.copyright{
+    background: transparent;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width:360px) {
+    .catalogue {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show-item {
+        width: 400px;
+    }
+
+    .catalogue img {
+        width: 300px;
+
+    }
 }
