@@ -26,12 +26,12 @@ function Slider() {
                     <img src="images/banheiro.jpg" alt="Imagem 4"></img>
                 </div>
 
-                <div class="navigation-auto">
+                {/* <div class="navigation-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
                     <div class="auto-btn3"></div>
                     <div class="auto-btn4"></div>
-                </div>
+                </div> */}
             </div>
 
             <div class="manual-navigation">
@@ -45,19 +45,19 @@ function Slider() {
     )
 }
 
-let count = 1;
+    let count = 1;
 
-setInterval(function() {
-    nextImage();
-},2000)
+    setInterval(function() {
+        nextImage();
+    },5000)
 
-function nextImage() {
-    count++;
-    if(count>4){
-        count = 1;
+    function nextImage() {
+       count++;
+        if(count>4){
+            count = 1;
+        }
+
+            document.getElementById("radio"+count).checked = true;
     }
-
-        document.getElementById("radio"+count).checked = true;
-}
 
 export default Slider

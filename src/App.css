@@ -13,15 +13,15 @@
 }
 
 h1{
-    background: none;
+  background: none; 
 }
 
 p{
-    background: none;
+   background: none;
 }
 
 header{
-    padding: 15px;
+    padding: 10px;
     margin: auto;
     font-size: larger;
     height: fit-content;
@@ -29,11 +29,23 @@ header{
     align-items: center;
     text-align: center;
     border-radius: 0px 0px 50px 25px;
-    background-image: url();
     background-size: cover;
     position: sticky;
 }
 
+nav{
+    transition: 0.5s;
+    padding: 10px;
+    margin: auto;
+    font-size: larger;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 50px 25px;
+    background-size: cover;
+    position: sticky;
+}
 
 .left{
     font-size: medium;
@@ -42,7 +54,21 @@ header{
     align-items: center;
     width: fit-content;
 }
-.left,.right,label{
+
+.right{
+    padding-bottom: 10px;
+}
+
+.right a{
+    text-decoration: none;
+    color: black;
+}
+
+.right a:hover{
+    color: rgb(4, 166, 4);
+}
+
+label{
     background: none;
 }
 
@@ -51,12 +77,14 @@ header{
     width: 800px;
     height: 400px;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .slides{
     width: 400%;
     height: 400px;
     display: flex;
+    transition: 0.5s;
 }
 
 .slides input{
@@ -66,6 +94,7 @@ header{
 .slide{
     width: 25%;
     position: relative;
+    transition: 1.5s;
 }
 
 .slide img{
@@ -73,18 +102,26 @@ header{
 }
 
 .manual-navigation {
-    background: none;
-    position: absolute;
-    width: 800px;
+    margin: auto;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    width: 12em;
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    border-radius: 10px;
+    height: 1.5em;
 }
 
 .manual-btn{
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 10px;
+    height: 1px;
     border: 2px solid #fff;
     padding: 5px;
-    border-color: darkseagreen;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -124,10 +161,12 @@ header{
 }
 
 .navigation-auto{
+    margin: auto;
+    align-items: center;
     background: none;
     position: absolute;
-    width: 800px;
-    margin-top: 360px;
+    width: fit-content;
+    
     display: flex;
     justify-content: center;
 }
@@ -155,6 +194,7 @@ header{
 }
 
 .title{
+    align-items: center;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -276,6 +316,7 @@ section{
 }
 
 .show-item{
+    display: grid;
     padding: 1.5%;
     border-radius: 20px;
     z-index: 1;
@@ -285,7 +326,7 @@ section{
     margin: auto;
     width: 20vw;
     word-wrap: break-word;
-    height: 40vh;
+    height: 45vh;
 }
 
 .show-item:hover{
@@ -303,10 +344,17 @@ background: linear-gradient(42deg, rgb(79, 74, 173) 0%, rgb(137, 152, 146) 0%, r
 
 .show-item label{
     font-size: 20px;
+    
 }
 
 .product-name{
-    padding-top: 7.5rem;
+    height: 10vh;
+}
+
+.product-price{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .show-item p{
