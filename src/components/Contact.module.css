@@ -1,0 +1,47 @@
+.contact_title{
+    background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    color: black;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10em;
+}
+
+
+.email , .phone, .chat{
+    padding: 2em;
+    height: 15em;
+    width: 15em;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+
+    img{
+        width: 3em;
+    }
+
+    h2{
+        color: darkgreen;
+    }
+
+    p{
+        text-align: center;
+        padding: 2em;
+        font-weight: bold;
+        padding-top: 6em;
+    }
+
+    label{
+        height: 2em;
+        width: 4em;
+    }
+
+    
+}

@@ -45,19 +45,19 @@ function Slider() {
     )
 }
 
-    let count = 1;
+    // let count = 1;
 
-    setInterval(function() {
-        nextImage();
-    },5000)
+    // setInterval(function() {
+    //     nextImage();
+    // },5000)
 
-    function nextImage() {
-       count++;
-        if(count>4){
-            count = 1;
-        }
+    // function nextImage() {
+    //    count++;
+    //     if(count>4){
+    //         count = 1;
+    //     }
 
-            document.getElementById("radio"+count).checked = true;
-    }
+    //         document.getElementById("radio"+count).checked = true;
+    // }
 
 export default Slider

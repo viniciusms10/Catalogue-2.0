@@ -12,6 +12,7 @@
     background-color: rgb(255, 255, 255);
 }
 
+
 h1{
   background: none; 
 }
@@ -258,7 +259,7 @@ label{
     align-items: center;
     justify-content: center;
     background: rgb(2,0,36);
-background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
+    background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
 }
 
 .Living-room .back{
@@ -385,6 +386,7 @@ background: linear-gradient(42deg, rgb(79, 74, 173) 0%, rgb(137, 152, 146) 0%, r
 
 
 footer{
+    margin-top: 5em;
     background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
     border-radius: 10px 10px 0px 0px;
     z-index: 0;
@@ -465,5 +467,30 @@ figcaption{
     .catalogue img {
         width: 300px;
 
+    }
+}
+
+.about_story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+    border-radius: 20px;
+    margin: 40px;
+    img {
+        width: 25em;
+        height: 20em;
+        clip-path: polygon(
+            25% 0%, 75% 0%, 100% 50%, 
+            75% 100%, 25% 100%, 0% 50%
+        );
+        
+    }
+
+    p{
+        font-size: 20px;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }

@@ -1,0 +1,8 @@
+.about_title{
+    background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    color: black;
+}
