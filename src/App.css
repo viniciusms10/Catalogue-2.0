@@ -36,16 +36,19 @@ header{
 
 nav{
     transition: 0.5s;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     margin: auto;
-    font-size: larger;
-    height: fit-content;
+    font-size: 20px;
+    height: 20vh;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0px 0px 50px 25px;
+    border-radius: 0px 0px 50px 50px;
     background-size: cover;
     position: sticky;
+    color: beige;
+    background: rgb(2,0,36);
+    background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
 }
 
 .left{
@@ -54,19 +57,26 @@ nav{
     justify-content: center;
     align-items: center;
     width: fit-content;
+    background: none;
+
+    a{
+        background: none;
+    }
 }
 
 .right{
     padding-bottom: 10px;
+    background: none;
 }
 
 .right a{
     text-decoration: none;
-    color: black;
+    color: white;
+    background: none;
 }
 
 .right a:hover{
-    color: rgb(4, 166, 4);
+    color: black;
 }
 
 label{
@@ -74,7 +84,7 @@ label{
 }
 
 .slide-show{
-    margin: 0 auto;
+    margin: 20px auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
@@ -119,11 +129,11 @@ label{
 .manual-btn{
     backdrop-filter: blur(10px); 
     background-color: rgba(255, 255, 255, 0.3);
-    width: 10px;
-    height: 1px;
+    width: 7px;
+    height: 7px;
     border: 2px solid #fff;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     transition: 1s;
 }
@@ -246,7 +256,7 @@ label{
 
 .back,.front{
     text-align: center;
-    color: beige;
+    color: white;
     width: 200px;
     height: 150px;
     backface-visibility: hidden;
@@ -322,7 +332,7 @@ section{
     border-radius: 20px;
     z-index: 1;
     background: none;
-    transition: 1s;
+    transition: 1s ease;
     text-align: center;
     margin: auto;
     width: 20vw;
@@ -331,16 +341,21 @@ section{
 }
 
 .show-item:hover{
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     background: rgb(2,0,36);
 background: linear-gradient(42deg, rgb(79, 74, 173) 0%, rgb(137, 152, 146) 0%, rgb(127, 144, 136) 21%, rgb(109, 133, 123) 45%, rgb(130, 151, 136) 100%);
    
 
-        p{
+    p{
         color: black;
         visibility: visible;
         transition: 0.5s;
     }
+
+    img{
+        box-shadow: 0px 0px 3px 3px beige;
+    }
+
 }
 
 .show-item label{
@@ -382,6 +397,7 @@ background: linear-gradient(42deg, rgb(79, 74, 173) 0%, rgb(137, 152, 146) 0%, r
     width: 20vw;
     height: 25vh;
     border-radius: 20px;
+    margin-bottom: 2em;
 }
 
 
@@ -390,6 +406,7 @@ footer{
     background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(105,218,171,1) 0%, rgba(98,177,142,1) 21%, rgba(97,171,138,1) 45%, rgba(85,104,91,1) 100%);
     border-radius: 10px 10px 0px 0px;
     z-index: 0;
+    color: white;
 }
 
 .footer-container{

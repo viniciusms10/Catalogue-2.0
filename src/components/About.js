@@ -1,4 +1,4 @@
-import ScrollReveal, { reveal } from "scrollreveal"
+import ScrollReveal from "scrollreveal"
 import { useEffect } from "react";
 import styles from "./About.module.css"
 
