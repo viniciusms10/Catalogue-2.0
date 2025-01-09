@@ -514,8 +514,8 @@ figcaption{
     }
     
    .right{
-        width: 384px;
-        padding: 10px 10px 15px 15px;
+        width: 380px;
+        padding-top: 1em;
 
         label{
             padding: 5px;
