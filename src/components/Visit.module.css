@@ -75,3 +75,34 @@
     }
     
 }
+
+@media (max-width:376px) {
+    .locations_container{
+        width: 90vw;
+    }
+
+    .locations_right , .locations_left{
+        flex-wrap: wrap;
+    }
+
+    .locations_left{
+        margin-top: 2em;
+    }
+    
+}
+
+@media (max-width:426px) {
+    .locations_container{
+        width: 90vw;
+    }
+
+    .locations_right , .locations_left{
+        flex-wrap: wrap;
+    }
+
+    .locations_left{
+        margin-top: 2em;
+    }
+    
+}
+

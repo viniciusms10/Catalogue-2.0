@@ -62,3 +62,35 @@
         text-align: center;
     }
 }
+
+@media (max-width:376px) {
+    .contacts{
+        display: grid;
+        gap: 10px;
+
+        .chat,.email,.phone{
+            width: 70vw;
+            height: 40vh;
+        }
+    }
+    
+    .contact_title{
+        text-align: center;
+    }
+}
+
+@media (max-width:426px) {
+    .contacts{
+        display: grid;
+        gap: 10px;
+
+        .chat,.email,.phone{
+            width: 70vw;
+            height: 40vh;
+        }
+    }
+    
+    .contact_title{
+        text-align: center;
+    }
+}

@@ -454,7 +454,8 @@ footer figure img:hover{
     background: none;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
 }
 
@@ -618,3 +619,248 @@ figcaption{
     }
 
 }
+
+@media (max-width:376px) {
+
+    nav{
+        height: 26vh;
+    }
+
+    .title{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   .right{
+        width: 270px;
+        padding: 10px 10px 15px 15px;
+
+        label{
+            padding: 5px;
+        }
+
+   }
+
+    .catalogue {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show-item {
+        width: 280px;
+        padding: 1em;
+    }
+
+    .catalogue img {
+        width: 250px;
+    }
+
+    .slide-show{
+        width: 90vw;
+        height: 40vh;
+        position: relative;
+
+        img{
+            width: 100vw;
+            height: 40vh;
+        }
+    }
+
+    .slides{
+        height: 250px;
+    }
+
+
+    .footer-container{
+        display: grid;
+    }
+
+    .footer-left{
+        figure img{
+            width: 25px;
+        }
+
+        figure img:hover{
+            width: 35px;
+        }
+    }
+
+    .footer-logo{
+        width: 150px;
+    }
+
+    .footer-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        figure{
+            width: 100px;
+        }
+
+        figure img{
+            width: 25px;
+        }
+
+        figure img:hover{
+            width: 35px;
+        }
+    }
+
+    .options{
+        display: none;
+    }
+
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .search{
+        width: 300px;
+    }
+
+    .about_story{
+        display: grid;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            
+            width: 100vw;
+            height: 40vh;
+
+        }
+    }
+
+}
+
+@media (max-width:426px) {
+
+    nav{
+        height: 26vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   .right{
+        width: 384px;
+        padding: 10px 10px 15px 15px;
+
+        label{
+            padding: 5px;
+        }
+
+   }
+
+    .catalogue {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show-item {
+        width: 280px;
+        padding: 1em;
+    }
+
+    .catalogue img {
+        width: 250px;
+    }
+
+    .slide-show{
+        width: 90vw;
+        height: 40vh;
+        position: relative;
+
+        img{
+            width: 100vw;
+            height: 40vh;
+        }
+    }
+
+    .slides{
+        height: 250px;
+    }
+
+
+    .footer-container{
+        display: grid;
+    }
+
+    .footer-left{
+        figure img{
+            width: 25px;
+        }
+
+        figure img:hover{
+            width: 35px;
+        }
+    }
+
+    .footer-logo{
+        width: 150px;
+    }
+
+    .footer-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        figure{
+            width: 100px;
+        }
+
+        figure img{
+            width: 25px;
+        }
+
+        figure img:hover{
+            width: 35px;
+        }
+    }
+
+    .options{
+        display: none;
+    }
+
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .search{
+        width: 300px;
+    }
+
+    .about_story{
+        display: grid;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            
+            width: 100vw;
+            height: 40vh;
+
+        }
+    }
+
+}
+
