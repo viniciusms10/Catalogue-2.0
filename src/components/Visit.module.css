@@ -61,7 +61,8 @@
     }
 }
 
-@media (max-width:320px) {
+
+@media (max-width:426px) {
     .locations_container{
         width: 90vw;
     }
@@ -91,7 +92,7 @@
     
 }
 
-@media (max-width:426px) {
+@media (max-width:320px) {
     .locations_container{
         width: 90vw;
     }
@@ -105,4 +106,3 @@
     }
     
 }
-

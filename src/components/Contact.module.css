@@ -47,7 +47,8 @@
     
 }
 
-@media (max-width:320px) {
+
+@media (max-width:426px) {
     .contacts{
         display: grid;
         gap: 10px;
@@ -79,7 +80,7 @@
     }
 }
 
-@media (max-width:426px) {
+@media (max-width:320px) {
     .contacts{
         display: grid;
         gap: 10px;
