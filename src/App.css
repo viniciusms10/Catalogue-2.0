@@ -8,7 +8,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: rgb(255, 255, 255);
 }
 
@@ -84,7 +84,7 @@ label{
 }
 
 .slide-show{
-    margin: 20px auto;
+    margin: 60px auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
@@ -239,8 +239,9 @@ label{
     display: flex;
     padding: 2rem;
     width: 90vw;
-    background: none;
-    gap: 10px;
+    border-radius: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .Living-room:hover,.Kitchen:hover,.Bathroom:hover,.Bedroom:hover,.Dining-room:hover,.Laundry:hover{
@@ -347,13 +348,14 @@ background: linear-gradient(42deg, rgb(79, 74, 173) 0%, rgb(137, 152, 146) 0%, r
    
 
     p{
-        color: black;
+        color: rgb(0, 0, 0);
+        transition: 1.5s ease;
         visibility: visible;
-        transition: 0.5s;
     }
 
     img{
         box-shadow: 0px 0px 3px 3px beige;
+        transition: 0.5s;
     }
 
 }
@@ -452,8 +454,8 @@ footer figure img:hover{
     background: none;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* duas colunas com largura igual */
-    grid-gap: 10px; /* espaço entre as colunas */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    grid-gap: 10px;
 }
 
 .footer-right figure{
@@ -468,23 +470,6 @@ figcaption{
     background: transparent;
     text-align: center;
     padding: 5px;
-}
-
-@media (max-width:360px) {
-    .catalogue {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .show-item {
-        width: 400px;
-    }
-
-    .catalogue img {
-        width: 300px;
-
-    }
 }
 
 .about_story {
@@ -510,4 +495,126 @@ figcaption{
         padding-left: 1em;
         padding-right: 1em;
     }
+}
+
+
+@media (max-width:320px) {
+
+    nav{
+        height: 26vh;
+    }
+
+    .title{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   .right{
+        width: 270px;
+        padding: 10px 10px 15px 15px;
+
+        label{
+            padding: 5px;
+        }
+
+   }
+
+    .catalogue {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show-item {
+        width: 280px;
+        padding: 1em;
+    }
+
+    .catalogue img {
+        width: 250px;
+    }
+
+    .slide-show{
+        width: 90vw;
+        height: 40vh;
+        position: relative;
+
+        img{
+            width: 100vw;
+            height: 40vh;
+        }
+    }
+
+    .slides{
+        height: 250px;
+    }
+
+
+    .footer-container{
+        display: grid;
+    }
+
+    .footer-left{
+        figure img{
+            width: 25px;
+        }
+
+        figure img:hover{
+            width: 35px;
+        }
+    }
+
+    .footer-logo{
+        width: 150px;
+    }
+
+    .footer-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        figure{
+            width: 100px;
+        }
+
+        figure img{
+            width: 25px;
+        }
+
+        figure img:hover{
+            width: 35px;
+        }
+    }
+
+    .options{
+        display: none;
+    }
+
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .search{
+        width: 300px;
+    }
+
+    .about_story{
+        display: grid;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            
+            width: 100vw;
+            height: 40vh;
+
+        }
+    }
+
 }

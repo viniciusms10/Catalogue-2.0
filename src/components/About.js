@@ -13,7 +13,7 @@ function About() {
             reset: true,
         })
     
-        revelar.reveal(".about_story",{interval:300})
+        revelar.reveal(".about_story",{interval:500})
     }, [])
 
     return(
